@@ -1,0 +1,22 @@
+.Surface {
+  background-color: rgb(1, 112, 112);
+  padding: 10px;
+  border-radius: 2px;
+  display: flex;
+  box-shadow: 2px 2px;
+  color: white;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.Content {
+  flex: 3
+}
+
+.Comments {
+  flex: 2
+}
+
+.Comment-list {
+  list-style-type: none;
+}

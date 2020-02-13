@@ -1,0 +1,14 @@
+.button {
+  background-color: rgb(1, 112, 112);
+  padding: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 2px 2px;
+  color: white;
+  font-size: 26px;
+}
+
+.button:hover {
+  background-color: rgb(1, 92, 92);
+  cursor: pointer;
+}
