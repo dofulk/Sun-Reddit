@@ -9,4 +9,21 @@
 
 .Main {
   padding: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.Buttons {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  background-color: 'rgb()';
+  height: 80px;
+  box-shadow: 0 -4px 4px;
+  color: teal;
 }

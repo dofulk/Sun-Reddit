@@ -3,9 +3,10 @@
   padding: 10px;
   border-radius: 2px;
   display: inline-block;
-  box-shadow: 2px 2px;
+  box-shadow: 4px 4px;
   color: white;
   font-size: 26px;
+  height: 26px;
 }
 
 .button:hover {
