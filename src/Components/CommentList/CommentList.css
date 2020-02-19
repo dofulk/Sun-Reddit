@@ -1,4 +1,22 @@
 .ListItem {
   border-bottom: 2px solid white;
-  padding: 10px;
+  padding: 5px;
+  text-align: left;
+  margin: 5px;
+}
+
+.Comment-List {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding:0;
+  margin:0;
+}
+
+ul li {
+   padding-left:8px;
+  list-style:none;
+  margin-bottom:6px;
 }

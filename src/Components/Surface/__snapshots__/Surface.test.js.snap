@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with image 1`] = `
+<div
+  className="Surface"
+>
+  <div
+    className="Content"
+  >
+    <h1>
+      Test
+    </h1>
+    <div
+      className="Body"
+    >
+      cateyes.jpg
+    </div>
+  </div>
+  <div
+    className="Comments"
+    inputRef={
+      Object {
+        "current": undefined,
+      }
+    }
+  >
+    <ul
+      className="Comment-list"
+    >
+      <li
+        class="ListItem"
+      >
+        hi
+      </li>
+      <li
+        class="ListItem"
+      >
+        hello
+      </li>
+      <li
+        class="ListItem"
+      >
+        how
+      </li>
+    </ul>
+    <input
+      className="Input"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders without props 1`] = `
+<div
+  className="Surface"
+>
+  <div
+    className="Content"
+  >
+    <h1 />
+    <div
+      className="Body"
+    />
+  </div>
+  <div
+    className="Comments"
+    inputRef={
+      Object {
+        "current": undefined,
+      }
+    }
+  >
+    <ul
+      className="Comment-list"
+    />
+    <input
+      className="Input"
+    />
+  </div>
+</div>
+`;
