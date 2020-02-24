@@ -4,7 +4,7 @@ import './Input.css'
 
 const Input = (props) => {
   return (
-    <input className="Input"/>
+    <input className="Input" placeholder="Leave a Comment"/>
   )
 }
 

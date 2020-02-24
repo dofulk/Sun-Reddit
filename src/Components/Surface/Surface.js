@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import './Surface.css';
 import CommentList from '../CommentList/CommentList';
-import Input from '../Input/Input';
 
 const Surface = (props) => {
 
@@ -16,7 +15,6 @@ const Surface = (props) => {
       </div>
       <div className="Comments">
         <CommentList comments={props.comments || []} />
-        <Input/>
       </div>
     </div>
   )
