@@ -1,27 +1,34 @@
 .Surface {
-  background-color: rgb(1, 112, 112);
+  background-color: #003333;
   border-radius: 2px;
   display: inline-flex;
   box-shadow: 2px 2px;
   color: white;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 30px;
-  margin-bottom: 110px;
+  margin: 30px 30px 110px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  justify-content: center;
+  max-width: 800px;
+
 }
 
 
-@media only screen and (max-width: 768px) {
-  .Surface {
-    flex-direction: column;
-  }
-  .Comments {
-    margin-left: 0px;
-  }
-}
+
 .Content {
   flex: 3;
-  margin: 10px
+  margin: 10px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Body {
+  max-inline-size: 80%;
+  align-self: center;
 }
 
 
@@ -31,7 +38,7 @@
   flex-direction: column;
   margin: 10px;
   max-height: 80vh;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .Comment-list {
