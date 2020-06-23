@@ -21,7 +21,7 @@ const MyButton = (props) => {
   const classes = useStyles();
   return (
     <Button variant="contained" className={classes.root} onClick={props.handleClick} disableElevation>
-      <text>{props.label}</text>
+      {props.label}
     </Button>
   );
 } 

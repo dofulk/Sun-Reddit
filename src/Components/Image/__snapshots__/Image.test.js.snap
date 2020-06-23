@@ -1,24 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders with image 1`] = `
-<div
-  className="Image-Container"
->
-  <img
-    alt="Sorry"
-    className="Image"
-    src="cateyes.jpg"
-  />
-</div>
+<img
+  alt="Sorry"
+  className="Image"
+  src="cateyes.jpg"
+/>
 `;
 
 exports[`renders without props 1`] = `
-<div
-  className="Image-Container"
->
-  <img
-    alt="Sorry"
-    className="Image"
-  />
-</div>
+<img
+  alt="Sorry"
+  className="Image"
+/>
 `;

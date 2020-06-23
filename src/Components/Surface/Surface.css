@@ -11,7 +11,7 @@
   flex-wrap: nowrap;
   flex-grow: 1;
   justify-content: center;
-  max-width: 800px;
+  max-width: 1200px;
 
 }
 
@@ -49,3 +49,4 @@
 .Divider {
   margin: 10px 10px 0px 10px;
 }
+

@@ -9,7 +9,9 @@ import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import Player from './Components/Player/Player'
+
 
 
 
@@ -26,7 +28,10 @@ const useStyles = makeStyles(theme => ({
 const App = () => {
 
   const classes = useStyles();
-  const post = useSelector(state => state.post)
+  const post = useSelector(state => state.post);
+
+
+  const useAddComment = (comment) => alert('hi')
 
   return (
     <div className="App">
@@ -34,12 +39,12 @@ const App = () => {
         <Surface
           title="Here's something to consider"
           comments={post.comments}
-          body={<Image src="https://buffer.com/library/wp-content/uploads/2016/06/giphy.gif"></Image>}
+          body={<Player></Player>}
         />
         <AppBar position="fixed" className={classes.appBar}>
           <Toolbar>
             <Box className="Buttons">
-              <Button label="UP" />
+              <Button label="UP" handleClick={() => alert("hi")} />
               <Button label="DOWN" />
             </Box>
           </Toolbar>
