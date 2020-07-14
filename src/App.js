@@ -31,7 +31,6 @@ const App = () => {
   const post = useSelector(state => state.post);
 
 
-  const useAddComment = (comment) => alert('hi')
 
   return (
     <div className="App">
@@ -39,7 +38,7 @@ const App = () => {
         <Surface
           title="Here's something to consider"
           comments={post.comments}
-          body={<Player></Player>}
+          body={<Image src={Cat}></Image>}
         />
         <AppBar position="fixed" className={classes.appBar}>
           <Toolbar>

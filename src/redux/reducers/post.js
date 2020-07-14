@@ -1,5 +1,5 @@
 
-import { ADD_POST, ADD_COMMENT } from '../actionTypes'
+import { ADD_POST, ADD_COMMENT } from '../actions/actionTypes'
 
 
 const initialState = {

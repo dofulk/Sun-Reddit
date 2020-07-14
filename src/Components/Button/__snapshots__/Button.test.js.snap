@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly with all props 1`] = `
+exports[`<Button /> renders correctly with all props 1`] = `
 <button
   className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-root-1 MuiButton-disableElevation"
   disabled={false}
@@ -30,7 +30,7 @@ exports[`renders correctly with all props 1`] = `
 </button>
 `;
 
-exports[`renders correctly with no props 1`] = `
+exports[`<Button /> renders correctly with no props 1`] = `
 <button
   className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-root-1 MuiButton-disableElevation"
   disabled={false}
