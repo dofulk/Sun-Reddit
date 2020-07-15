@@ -4,12 +4,7 @@ import { ADD_POST, ADD_COMMENT } from '../actions/actionTypes'
 
 const initialState = {
   postBody: {},
-  comments: [
-    {
-      key: 1,
-      comment: 'hello'
-    },
-  ]
+  comments: []
 };
 
 export default (state = initialState, action) => {
