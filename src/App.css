@@ -10,7 +10,7 @@
   justify-content: center;
   height: auto;
   min-height: 100%;
-  background-color: #001919;
+  /* background-color: #001919; */
   text-align: center;
 }
 
@@ -18,10 +18,12 @@
   position: fixed;
   left: 0;
   right: 0;
+  bottom: 0;
   margin: auto;
   justify-content: space-around;
   align-items: center;
   display: flex;
   justify-self: center;
   max-width: 800px;
+  padding: 10px;
 }

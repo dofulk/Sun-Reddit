@@ -1,41 +1,64 @@
 import React, { useEffect } from 'react';
 import './Surface.css';
 import CommentList from '../CommentList/CommentList';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
-import Button from '../Button/Button';
-import { useSelector, useDispatch } from 'react-redux';
-import { addComment } from '../../redux/actions'
+import { Divider, TextField, Paper, Box, Button } from '@material-ui/core/';
+import { connect } from 'react-redux';
+import { addComment } from '../../redux//actions/actions'
 
-const Surface = (props) => {
+export class Surface extends React.Component {
 
-  const dispatch = useDispatch();
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: '',
+    }
+  }
 
-  return (
-    <div className="Surface">
-        <h1>{props.title}</h1>
+
+  handleChange = (event) => { this.setState({ value: event.target.value }); }
+
+  submit = (comment) => {
+    this.props.addComment(comment)
+      this.state.value = ''
+
+  }
+  render() {
+    return (
+
+      <Paper className="Surface">
+        <h1>{this.props.title}</h1>
         <Box className="Body">
-          {props.body}
-          
+          {this.props.body}
+
         </Box>
-        <div className="Divider">
-        <Divider/>
-        </div>
-        
-      <Box className="Comments">
-        <CommentList comments={props.comments || []}/>
-      </Box>
-      <Button label="hi" className="Buttons" 
-      
-      handleClick={() => dispatch(addComment({
-        key: 2,
-        comment: "ooooo"
-      }))}
-      
-      />
-    </div>
-  )
+        <Box className="Divider">
+          <Divider />
+        </Box>
+
+        <Box className="Comments">
+          <CommentList className="CommentList" comments={this.props.comments || []} />
+        </Box>
+        <Box className="Submit">
+          <TextField variant="filled" value={this.state.value} onChange={this.handleChange} className="TextField"/>
+          {/* <Button
+            variant="contained"
+            color="secondary"
+
+            onClick={() => this.submit({
+              key: 2,
+              comment: this.state.value
+            })}
+
+          >Submit</Button> */}
+        </Box>
+      </Paper>
+    )
+  }
 }
 
-export default Surface
+const mapDispatchToProps = {
+  addComment
+};
+
+
+export default connect(null, mapDispatchToProps)(Surface)

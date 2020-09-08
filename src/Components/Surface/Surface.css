@@ -1,5 +1,4 @@
 .Surface {
-  background-color: #003333;
   border-radius: 2px;
   display: inline-flex;
   box-shadow: 2px 2px;
@@ -12,7 +11,7 @@
   flex-grow: 1;
   justify-content: center;
   max-width: 1200px;
-
+  height: 85vh;
 }
 
 
@@ -23,7 +22,6 @@
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
-
 }
 
 .Body {
@@ -36,11 +34,15 @@
   flex: 2;
   display: flex;
   flex-direction: column;
-  margin: 0px 10px 10px 10px;
+  margin: 0px 10px 0px 10px;
   max-height: 80vh;
   overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge hide scrollbar*/
+  scrollbar-width: none; /* Firefox hide scrollbar*/
 }
-
+.Comments::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera hide Scrollbar*/
+}
 
 .Input {
   justify-self: flex-end;
@@ -50,6 +52,15 @@
   margin: 10px 10px 0px 10px;
 }
 
-.Buttons {
-  width: 50;
+.Submit {
+  padding-bottom: 10px;
+  max-inline-size: 90%;
+  margin: 0px 5px 5px 5px;
+  align-self: center;
+  width: 100%;
+}
+
+.Textfield {
+  width: 100%;
+  background-color: red;
 }

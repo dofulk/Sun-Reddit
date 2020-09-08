@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Surface /> renders with comments 1`] = `ShallowWrapper {}`;
+
+exports[`<Surface /> renders with image 1`] = `ShallowWrapper {}`;
+
+exports[`<Surface /> renders without props 1`] = `ShallowWrapper {}`;
